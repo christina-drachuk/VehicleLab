@@ -19,9 +19,7 @@ abstract class Car {
     }
     /** Starting mileage is 0. */
     public Car(String make, String model) {
-        this.make = make;
-        this.model = model;
-        this.mileage = 0;
+        this(make, model, 0);
     }
     /** If able to drive the full given number of miles, returns true. If
     not, returns false.
