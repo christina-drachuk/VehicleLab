@@ -7,9 +7,7 @@ public abstract class ElectricCar extends Car {
     @throws IllegalArgumentException if milesOnMaxCharge is nonpositive.*/
     public ElectricCar(String make, String model, double startingMileage,
     double milesOnMaxCharge) {
-        this.make = make;
-        this.model = model;
-        this.startingMileage = startingMileage;
+        super(make, model, startingMileage);
         if (milesOnMaxCharge <= 0) {
             throw new IllegalArgumentException();
         }
