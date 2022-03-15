@@ -1,4 +1,4 @@
-package VehicleLab.vehicle;
+package vehicle;
 
 public abstract class ElectricCar extends Car {
     private double milesOnMaxCharge;
@@ -31,7 +31,7 @@ public abstract class ElectricCar extends Car {
             throw new IllegalArgumentException();
         }
         if (miles > this.remainingCharge) {
-            throw new IllegalArgumentException()
+            throw new IllegalArgumentException();
         }
 
         addMileage(miles);

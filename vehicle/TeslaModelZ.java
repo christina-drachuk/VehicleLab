@@ -1,4 +1,4 @@
-package VehicleLab.vehicle;
+package vehicle;
 
 public class TeslaModelZ extends ElectricCar {
     private int modelNum;
