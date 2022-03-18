@@ -30,6 +30,20 @@ public class TeslaModelZ extends ElectricCar {
         return this.getModel() + String.valueOf(this.modelNum);
     }
 
+    /** @throws IllegalArgumentException if mils is negative */
+    public void driveAutonomously(double miles) {
+        if (miles < 0) {
+            throw new IllegalArgumentException();
+        }
+
+        if (miles > getRemainingRange()) {
+            drive(getRemainingRange());
+        }
+        else {
+            drive(miles);
+        }
+    }
+
     /** Prints out the make, model, model number, and mileage.
     Ex: "Tesla Z70 (30.0 mi)"
     You may not need to implement this method depending on how you
