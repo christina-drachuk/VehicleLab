@@ -43,7 +43,7 @@ abstract class Car {
     number, ".0" should still display.
     */
     public String toString() {
-        return String.format(make + " " + model + " (%0.1f mi)", getMileage());
+        return String.format(make + " " + model + " (%.1f mi)", getMileage());
     }
     public double getMileage() {
         return this.mileage;
