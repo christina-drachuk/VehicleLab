@@ -6,7 +6,7 @@ import vehicle.FordFrivolous;
 public class Group3_3FordFrivolousFuel extends BCATestScenario{
     public int runTest() {
 
-        FordFrivolous c1 = new FordFrivolous(0);
+        FordFrivolous c1 = new FordFrivolous();
         
         assertEquals(c1.getMPG(), 23.6, .1, "Default MPG should be 23.6");
 
