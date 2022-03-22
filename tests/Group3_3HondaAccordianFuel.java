@@ -2,7 +2,6 @@ package tests;
 
 import bcatest.BCATestScenario;
 
-import bcatest.BCATestScenario;
 import vehicle.HondaAccordian;
 
 public class Group3_3HondaAccordianFuel extends BCATestScenario {
