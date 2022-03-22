@@ -7,7 +7,7 @@ import vehicle.HondaAccordian;
 public class Group3_3HondaAccordianFuel extends BCATestScenario {
     public int runTest() {
 
-        HondaAccordian c1 = new HondaAccordian(0);
+        HondaAccordian c1 = new HondaAccordian(2018);
         
         assertEquals(c1.getMPG(), 33.2, .1, "Default MPG should be 33.2");
 
