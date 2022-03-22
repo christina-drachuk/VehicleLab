@@ -30,7 +30,7 @@ public class Group3_3FordFrivolousFuel extends BCATestScenario{
         assertEquals(c1.getRemainingRange(), 236.0, .1, "Remaining Range should be 236");
 
         // refillTank(237) should throw IllegalArgumentException
-        assertThrows(IllegalArgumentException.class, () -> {c1.refillTank(473);}, "You can not fill the tank to more than 20 gallons");
+        assertThrows(IllegalArgumentException.class, () -> {c1.refillTank(20.1);}, "You can not fill the tank to more than 20 gallons");
         // refillTank(-1) should throw IllegalArgumentException
         assertThrows(IllegalArgumentException.class, () -> {c1.refillTank(-1);}, "You can not fill the tank with negative gallons");
 
@@ -38,7 +38,7 @@ public class Group3_3FordFrivolousFuel extends BCATestScenario{
 
         assertEquals(c1.getFuelLevel(), 15.0, .1, "Gallons left in the tank should be 15");
 
-        assertEquals(c1.getRemainingRange(), 354.0, .1, "Gallons left in the tank should be 15");
+        assertEquals(c1.getRemainingRange(), 354.0, .1, "The remaining range based on our fuel level should be 354");
 
         
 
