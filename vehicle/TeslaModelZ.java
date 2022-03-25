@@ -25,7 +25,7 @@ public class TeslaModelZ extends ElectricCar implements SelfDriving{
     /** Returns the model and model number concatenated together. For
     example, returns "Z70" for modelNum 70. */
     public String getModel() {
-        return this.getModel() + String.valueOf(this.modelNum);
+        return super.getModel() + String.valueOf(this.modelNum);
     }
 
     /** @throws IllegalArgumentException if mils is negative */
