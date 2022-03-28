@@ -77,10 +77,12 @@ abstract class Car {
     attempted days.*/
     public int roadTrip(List<Double> milesEachDay) {
         int day = 0;
-        while(day < milesEachDay.size() && milesEachDay.get(day) <= getRemainingRange()) {
-            if(milesEachDay.get(day) < 0) {
+        for(int i = 0; i < milesEachDay.size(); i++) {
+            if(milesEachDay.get(i) < 0) {
                 throw new IllegalArgumentException();
             }
+        }
+        while((day < milesEachDay.size()) && (milesEachDay.get(day) <= getRemainingRange())) {
             drive(milesEachDay.get(day++));
         }
         return day;
